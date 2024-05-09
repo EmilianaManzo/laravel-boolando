@@ -1,9 +1,17 @@
+@php
+    $navLeft = config('menues.headerMenues.navLeft');
+    $navRight = config('menues.headerMenues.navRight');
+@endphp
+
 <header>
     <div class="container d_flex">
         <nav class="d_flex debug">
             <ul class="d_flex">
-                {{-- <li v-for="(nav, indice) in navLeft" :key="`nl-${indice}`"><a
-                        :href="nav.link">{{ nav . genere }}</a></li> --}}
+                @foreach ($navLeft as $nav )
+
+                <li><a class=" text-capitalize " href="{{$nav['link']}}">{{ $nav['genere'] }}</a></li>
+
+                @endforeach
             </ul>
         </nav>
         <div class="logo d_flex debug">
@@ -11,8 +19,11 @@
         </div>
         <nav class="d_flex debug" id="nav_right">
             <ul class="d_flex">
-                {{-- <li v-for="(nav, indice) in navRight" :key="`nr-${indice}`"><a :href="nav.link"
-                v-html="nav.icon"></a></li> --}}
+                @foreach ($navRight as $nav )
+
+                <li><a href="{{$nav['link']}}"><i class="{{ $nav['icon'] }}"></i></a></li>
+
+                @endforeach
             </ul>
         </nav>
     </div>

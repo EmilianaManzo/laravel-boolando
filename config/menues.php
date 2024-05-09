@@ -4,29 +4,29 @@ return [
     'headerMenues' => [
         'navLeft' => [
             [
-                'genere' => 'Donna',
-                'link' => '#'
+                'genere' => 'product',
+                'link' => 'product'
             ],
             [
-                'genere' => 'Uomo',
-                'link' => '#'
+                'genere' => 'contact',
+                'link' => 'contacts'
             ],
             [
-                'genere' => 'Bambini',
-                'link' => '#'
+                'genere' => 'about',
+                'link' => 'about'
             ],
         ],
         'navRight' => [
             [
-                'icon' => '<i class="fa-regular fa-user"></i>',
+                'icon' => 'fa-regular fa-user',
                 'link' => '#'
             ],
             [
-                'icon' => '<i class="fa-regular fa-heart"></i>',
+                'icon' => 'fa-regular fa-heart',
                 'link' => '#'
             ],
             [
-                'icon' => '<i class="fa-solid fa-bag-shopping"></i>',
+                'icon' => 'fa-solid fa-bag-shopping',
                 'link' => '#'
             ],
         ],
