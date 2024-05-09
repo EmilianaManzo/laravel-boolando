@@ -12,7 +12,7 @@
                         <img src="{{ Vite::asset('resources/img/' . $product['frontImage']) }}" :alt="{{$product['frontImage']}}">
                         <img class="secondary-image" src="{{ Vite::asset('resources/img/' . $product['backImage']) }}" alt="{{$product['backImage']}}">
                         <div class="favourite">
-                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart" onclick="{{}}"></i>
                         </div>
 
                         <div class="badges">

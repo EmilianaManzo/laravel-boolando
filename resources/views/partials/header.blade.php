@@ -1,5 +1,6 @@
 @php
     $navLeft = config('menues.headerMenues.navLeft');
+
     $navRight = config('menues.headerMenues.navRight');
 @endphp
 
@@ -9,7 +10,7 @@
             <ul class="d_flex">
                 @foreach ($navLeft as $nav )
 
-                <li><a class=" text-capitalize " href="{{$nav['link']}}">{{ $nav['genere'] }}</a></li>
+                <li><a class=" text-capitalize " href="{{route($nav['link'])}}">{{ $nav['genere'] }}</a></li>
 
                 @endforeach
             </ul>
@@ -20,7 +21,7 @@
         <nav class="d_flex debug" id="nav_right">
             <ul class="d_flex">
                 @foreach ($navRight as $nav )
-
+                {{-- l'errore della route era di questa riga perchè non avendo nulla riportava errore , quindi faccio finta di stampare dinamicamente i link  --}}
                 <li><a href="{{$nav['link']}}"><i class="{{ $nav['icon'] }}"></i></a></li>
 
                 @endforeach

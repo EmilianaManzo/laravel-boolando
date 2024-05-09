@@ -1,12 +1,18 @@
+@php
+    $lawPages = config('menues.footerMenues.lawPages');
+    $icons = config('menues.footerMenues.icons');
+@endphp
+
 <footer>
     <div class="container d_flex">
         <div class="left_footer debug">
             <h3>Boolean s.r.l.</h3>
             <nav class="law_pages">
                 <ul class="d_flex">
-                    ok
-                    {{-- <li v-for="(elem, indice) in leftFooterMenu" :key="indice"><a
-                            :href="elem.link">{{ elem . name }}</a></li> --}}
+                    @foreach ($lawPages as $item )
+
+                    <li ><a href="{{ $item['link'] }}">{{ $item['name'] }}</a></li>
+                    @endforeach
                 </ul>
             </nav>
         </div>
@@ -16,10 +22,12 @@
             </div>
             <nav class="icons">
                 <ul class="d_flex">
-                    ok
-                    {{-- <li v-for="(icon, indice) in rightFooterMenu" :key="indice">
-                        <a :href="icon.link" target="_blank" v-html="icon.img"></a>
-                    </li> --}}
+                    @foreach ($icons as $icon )
+
+                    <li>
+                        <a href="{{url($icon['link'])}}" target="_blank"><i class="{{ $icon['img'] }}"></i></a>
+                    </li>
+                    @endforeach
                 </ul>
             </nav>
         </div>

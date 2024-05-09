@@ -54,18 +54,18 @@ return [
 
         'icons' => [
             [
-                'img' => '<i class="fa-brands fa-square-twitter"></i>',
-                'link' => 'https=>//twitter.com/'
+                'img' => 'fa-brands fa-square-twitter',
+                'link' => 'https://twitter.com/'
             ],
 
             [
-                'img' => '<i class="fa-brands fa-square-facebook"></i>',
-                'link' => 'https=>//www.facebook.com/'
+                'img' => 'fa-brands  fa-square-facebook',
+                'link' => 'https://www.facebook.com/'
             ],
 
             [
-                'img' => '<i class="fa-brands fa-instagram"></i>',
-                'link' => 'https=>//www.instagram.com/'
+                'img' => 'fa-brands fa-instagram',
+                'link' => 'https://www.instagram.com/'
             ],
 
             [
