@@ -1,0 +1,89 @@
+main {
+    padding-top: 150px;
+}
+
+.card {
+    margin-bottom: 20px;
+
+    .card-images {
+        position: relative;
+        cursor: pointer;
+
+        .secondary-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover .secondary-image {
+            display: block;
+        }
+
+        .favourite {
+            position: absolute;
+            background-color: white;
+            top: 20px;
+            right: 0;
+            padding: 21px 14px;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .whishlist {
+            color: red;
+        }
+    }
+
+    .badges {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+
+        .badge {
+            padding: 5px 10px;
+            color: white;
+            font-weight: 700;
+            text-transform: capitalize;
+
+            &.discount {
+                margin-right: 30px;
+                background-color: red;
+            }
+
+            &.tag {
+                background-color: green;
+                margin-right: 5px;
+            }
+
+        }
+    }
+
+    .card-text {
+        .product-name {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-size: .9rem;
+        }
+
+        .new_price {
+            color: red;
+            font-weight: 700;
+            padding-right: 10px;
+        }
+
+        .old_price {
+            text-decoration: line-through;
+            color: black;
+            font-weight: normal;
+        }
+
+
+    }
+
+}

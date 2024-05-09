@@ -1,0 +1,43 @@
+footer {
+    background-color: $footer-color;
+    height: 100px;
+    width: 100%;
+
+    .container {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .left_footer,
+        .right_footer {
+            width: calc(100% / 2);
+        }
+
+        .left_footer h3,
+        .right_footer h5 {
+            color: $text-light;
+            margin: 10px 0;
+        }
+
+        .left_footer {
+            .law_pages ul li a {
+                color: $text-light;
+                font-weight: lighter;
+                font-size: .6em;
+                padding-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+
+        .right_footer {
+            flex-direction: column;
+            align-items: flex-end;
+
+            h5 {
+                padding-right: 15px;
+            }
+        }
+
+    }
+}
